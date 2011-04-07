@@ -6,9 +6,20 @@
 <title>被曝量を計算してみよう</title> 
 </head>
 <body>
+<div class="nav">
+<div class="nav-prev">
+<div class="nav-section-link-prev"><a href="./">前のページ</a></div>
+<div class="nav-section-name">放射能の話</div>
+</div>
+<div class="nav-next">
+<div class="nav-section-link-next"><a href="./vent.html">次のページ</a></div>
+<div class="nav-section-name">1日で吸い込む空気の量</div>
+</div>
 <div class="nav-title"> 
-<div class="nav-title-link"><a href="./">自称文科系の人のための放射能の話</a></div> 
+<div class="nav-title-title">自称文科系の人のための放射能の話</div>
+<div class="nav-title-link"><a href="./">最初のページ</a></div> 
 </div> 
+</div>
 
 <h1>被曝量を計算してみよう</h1>
 <a href="http://www.icrp.org/publications.asp">国際放射線防護委員会 (ICRP) が被曝量の計算方法を文書で示している</a>んだけど、その文書は有料だから、一般の人には入手しにくい。日本では<a href="http://www.remnet.jp/lecture/b05_01/4_1.html">公益財団法人原子力安全研究協会が一部のデータをインタネットに載せている</a>けど、正確に計算するにはちょっとデータが足りない。幸い、フランス政府の2003年の法令に計算方法がわかりやすく書いてあって、それを放射線防護科学技術協会 (Association pour les Techniques et les Sciences de la Radioprotection, ATSR) が<a href="http://www.atsr-ri.asso.cc-pays-de-gex.fr/Legislatif/regles-calcul-dose-eff-externe-interne%5B1%5D.pdf">無料で公開</a>してくれている。これをもとに計算してみよう。
@@ -96,7 +107,20 @@ Fは速い、Mは中くらい、Sは遅いという意味だ。
 表1.3で分からない場合は、表3.3（58066ページ、pdfでは64ページめ）を見る。ここでは、化合物の種類ごとにF・M・Sが付けられているので、調べたい物質の化合物に対応する肺クリアランスを選ぶ。何の化合物か分からない場合は、「Composés non spécifiés（不特定の化合物）」と書いてある行を選ぶ。
 </p><p>
 こうしてFかMかSを選ぶことができ、これに対応する行を表1.2から選んで、調べたい年齢の列も選べば、必要な <i>h<sub>吸</sub></i> がわかる。
+</p><p>
+たとえば、0歳の赤ちゃんが、 2.3×10<sup>-7</sup> ベクレル／cm<sup>3</sup> の濃さでセシウム137のエアロゾルが含まれた空気の中で1日過ごしたら、そのせいで70歳までに内部被曝する量はどのくらいになるかな？
+</p><p>
+<a href="./vent.html">1日に吸い込む空気の量の計算方法</a>を見て計算しよう。
+赤ちゃんの体重が5kgの場合、1日に 720000cm<sup>3</sup> から 3024000cm<sup>3</sup> 程度の空気を吸い込む。この数値に 2.3×10<sup>-7</sup> ベクレル／cm<sup>3</sup> を掛けると、この赤ちゃんが1日に吸い込むセシウム137は、0.1656ベクレルから0.69552ベクレル程度になる。これが <i>A<sub>吸</sub></i> だ。
+</p><p>
+セシウム137の <i>h<sub>吸</sub></i> を表1.2で探すと、肺クリアランスはF・M・Sの３種類ある。表1.3のセシウムの行を見て、デフォルトではFを選ぶことが分かる。表1.2に戻り、セシウム137のFの行の1歳までの列を見て、 <i>h<sub>吸</sub></i> が 8.8×10<sup>-9</sup> であることがわかる。
+</p><p>
+これを <i>A<sub>吸</sub></i> に掛ければ、この赤ちゃんが70歳までにこのセシウム137を吸ったせいで内部被曝する量は、
+1.5×10<sup>-9</sup> シーベルトから6.1×10<sup>-9</sup> シーベルト、つまり0.0015マイクロシーベルトから0.0061マイクロシーベルト程度だということがわかる。
+</p><p>
+その空気に含まれる、ほかの放射性物質のエアロゾルについても、同じように計算して、シーベルトの数値を出し、それを合計すれば、この日のエアロゾルによる内部被曝量がわかる。
 </p>
+
 <h5>水に溶けたり化合したりしやすい気体の場合</h5>
 <p>
 表2.1（58044ページ、pdfでは42ページめ）が、水に溶けたり化合したりしやすい気体や蒸気を吸い込んだ場合の実効線量換算係数 <i>h<sub>吸</sub></i> だ。
