@@ -1,1 +1,1 @@
-# [自称文科系の人のための放射能の話](http://guskant.github.com/bgs/)
+# [放射能の話～生きのびるための基礎知識](http://guskant.github.com/bgs/)
